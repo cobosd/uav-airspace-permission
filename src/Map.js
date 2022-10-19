@@ -47,10 +47,10 @@ const Map = ({polygons, setPolygons}) => {
             ],
             'paint': {
               'fill-color': [
-                "case", ['==', ['get', "user_class_id"], 1], "#00ff00", ['==', ['get', "user_class_id"], 2], "#00ff00",
+                "case", ['==', ['get', "user_class_id"], 1], "#ff0034", ['==', ['get', "user_class_id"], 2], "#ff0034",
                 '#a020f0'
               ],
-              'fill-outline-color': '#00ff00',
+              'fill-outline-color': '#ff0034',
               'fill-opacity': 0.5
             }
           },
@@ -61,8 +61,8 @@ const Map = ({polygons, setPolygons}) => {
               ['==', '$type', 'Polygon']
             ],
             'paint': {
-              'fill-color': '#00ff00',
-              'fill-outline-color': '#00ff00',
+              'fill-color': '#ff0034',
+              'fill-outline-color': '#ff0034',
               'fill-opacity': 0.1
             }
           },
@@ -74,7 +74,7 @@ const Map = ({polygons, setPolygons}) => {
             ],
             'paint': {
               'circle-radius': 3,
-              'circle-color': '#00ff00'
+              'circle-color': '#ff0034'
             }
           },
           {
@@ -104,7 +104,7 @@ const Map = ({polygons, setPolygons}) => {
               'line-join': 'round'
             },
             'paint': {
-              'line-color': '#00ff00',
+              'line-color': '#ff0034',
               'line-dasharray': [0.2, 2],
               'line-width': 2
             }
