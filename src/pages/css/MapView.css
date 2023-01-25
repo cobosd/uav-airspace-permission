@@ -1,0 +1,28 @@
+.main-button {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 6px 12px;
+  margin: 50px;
+  background-color: red;
+  border-radius: 52px;
+  box-shadow:  21px 21px 100px #848484,
+                -21px -21px 100px #ffffff;
+}
+
+.array-box {
+  height: 205px;
+  width: 1050px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  text-align: center;
+  z-index: 1;
+}
+  
