@@ -3,11 +3,11 @@ import {
   withStyles,
 } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import './App.css';
+import "./App.css";
 import Map from "./Map";
 // import axios from 'axios';
 
-import {fetchData} from './functions/queryAthena'
+import {fetchData} from "./functions/queryAthena";
 
 const CustomButton = withStyles({
   root: {
@@ -19,17 +19,16 @@ const CustomButton = withStyles({
     borderRadius: 40,
     padding: "0 30px",
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-    position: 'absolute',
+    position: "absolute",
     top: 10,
     right: 100,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 20,
   },
   label: {
     textTransform: "capitalize"
   }
 })(props => <Button {...props} />);
-
 
 
 function App() {
@@ -53,18 +52,16 @@ function App() {
 
   }
 
-
-
   return (
     <div>
       <Map polygons={polygons} setPolygons={setPolygons}/>
-        <CustomButton onClick={handleClick}> Request Approval </CustomButton>
-        {/* <div className="array-box">
+      <CustomButton onClick={handleClick}> Request Approval </CustomButton>
+      {/* <div className="array-box">
             <div id="array-area">
               <p>{JSON.stringify(polygons)}</p>
             </div>
         </div> */}
-   </div>
+    </div>
   )
 }
 
