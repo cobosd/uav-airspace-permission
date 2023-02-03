@@ -14,23 +14,23 @@ exports.handler = async function (event) {
   const epochTimestamp = currentDate.getTime();
 
   const item = {
-    id: `${checkFileType(key)}_${key.replace('public/', '')}`,
-    date: currentDate.toISOString().substring(0, 10),
+    recordId: `${checkFileType(key)}_${key.replace('public/', '')}`,
+    formattedDate: currentDate.toISOString().substring(0, 10),
     mediaType: checkFileType(key),
     fileName: key.replace('public/', ''),
-    fileExtension: key.substr(key.lastIndexOf(".")),
+    fileExtension: key.substr(key.lastIndexOf(".") + 1),
     createdAt: epochTimestamp,
     updateAt: epochTimestamp,
     size: object['size'],
     etag: object['eTag'],
     recordType: 's3_media_metadata'
-  }
+  };
   console.log(`Logging Item to be posted in DynamoDB: ${JSON.stringify(item)}`);
 
   const params = {
     TableName: tableName,
     Item: item,
-    ConditionExpression: 'attribute_not_exists(id) AND attribute_not_exists(date)'
+    ConditionExpression: 'attribute_not_exists(recordId) AND attribute_not_exists(formattedDate)'
   };
   console.log(`Params to be posted to Dynamo - ${JSON.stringify(params)}`);
   try{

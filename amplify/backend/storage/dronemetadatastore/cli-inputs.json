@@ -2,11 +2,11 @@
   "resourceName": "dronemetadatastore",
   "tableName": "dronemetadatastore",
   "partitionKey": {
-    "fieldName": "id",
+    "fieldName": "recordId",
     "fieldType": "string"
   },
   "sortKey": {
-    "fieldName": "date",
+    "fieldName": "formattedDate",
     "fieldType": "string"
   },
   "gsi": [],
