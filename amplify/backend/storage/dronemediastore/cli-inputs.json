@@ -1,0 +1,14 @@
+{
+  "resourceName": "dronemediastore",
+  "policyUUID": "d25c7d01",
+  "bucketName": "airdronemediastore",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggerd5d77eb7",
+  "groupAccess": {}
+}
