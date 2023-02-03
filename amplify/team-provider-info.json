@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify543b90d5b0d14-staging-91514-authRole",
+      "UnauthRoleArn": "arn:aws:iam::716751051256:role/amplify-amplify543b90d5b0d14-staging-91514-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::716751051256:role/amplify-amplify543b90d5b0d14-staging-91514-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-amplify543b90d5b0d14-staging-91514-deployment",
+      "UnauthRoleName": "amplify-amplify543b90d5b0d14-staging-91514-unauthRole",
+      "StackName": "amplify-amplify543b90d5b0d14-staging-91514",
+      "StackId": "arn:aws:cloudformation:ap-south-1:716751051256:stack/amplify-amplify543b90d5b0d14-staging-91514/469e66d0-9eec-11ed-9be0-06651e0f829a",
+      "AmplifyAppId": "d3shlvvfs48vnd"
+    },
+    "categories": {
+      "auth": {
+        "uavairspacepermissio0077e7ae": {}
+      },
+      "function": {
+        "S3Triggerd5d77eb7": {
+          "deploymentBucketName": "amplify-amplify543b90d5b0d14-staging-91514-deployment",
+          "s3Key": "amplify-builds/S3Triggerd5d77eb7-6a2b4a6b2b4674444c2f-build.zip"
+        }
+      },
+      "storage": {
+        "dronemediastore": {},
+        "dronemetadatastore": {}
+      }
+    }
+  }
+}

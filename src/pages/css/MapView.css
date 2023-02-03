@@ -25,4 +25,22 @@
   text-align: center;
   z-index: 1;
 }
+
+.map-button {
+  right: 100px;
+  position: absolute;
+  top: 10px;
+  border: 0;
+  width: 250px;
+  border-radius: 40px;
+  padding: 0 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #673AB7;
+  height: 42px;
+  color: #fff;
+}
+
   

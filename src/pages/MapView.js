@@ -1,33 +1,7 @@
 import { useState } from "react";
-import {
-  withStyles,
-} from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import "./css/MapView.css";
 import Map from "./Map";
-
 import {fetchData} from "../functions/queryAthena";
-
-const CustomButton = withStyles({
-  root: {
-    background: "linear-gradient(45deg, #810cf5 30%, #810cf5 70%)",
-    border: 0,
-    color: "white",
-    width: 250,
-    height: 50,
-    borderRadius: 40,
-    padding: "0 30px",
-    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-    position: "absolute",
-    top: 10,
-    right: 100,
-    fontWeight: "bold",
-    fontSize: 20,
-  },
-  label: {
-    textTransform: "capitalize"
-  }
-})(props => <Button {...props} />);
+import "./css/MapView.css";
 
 
 function MapView() {
@@ -54,7 +28,7 @@ function MapView() {
   return (
     <div>
       <Map polygons={polygons} setPolygons={setPolygons}/>
-      <CustomButton onClick={handleClick}> Request Approval </CustomButton>
+      <button className="map-button" onClick={handleClick}> Request Approval </button>
       {/* <div className="array-box">
             <div id="array-area">
               <p>{JSON.stringify(polygons)}</p>
