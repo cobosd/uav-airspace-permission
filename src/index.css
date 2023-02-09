@@ -17,3 +17,8 @@ code {
   width: 100%;
   position: absolute;
 }
+
+.u-mar-top-32 {
+  margin-top: 32px;
+}
+

@@ -18,7 +18,7 @@
       "function": {
         "S3Triggerd5d77eb7": {
           "deploymentBucketName": "amplify-amplify543b90d5b0d14-staging-91514-deployment",
-          "s3Key": "amplify-builds/S3Triggerd5d77eb7-7a7a6b72355453744c72-build.zip"
+          "s3Key": "amplify-builds/S3Triggerd5d77eb7-744876446a59517a6853-build.zip"
         }
       },
       "storage": {
