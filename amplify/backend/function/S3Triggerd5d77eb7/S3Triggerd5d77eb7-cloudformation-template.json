@@ -155,6 +155,29 @@
                   }
                 ]
               }
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "dynamodb:DeleteItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:GetItem",
+                "dynamodb:Query"
+              ],
+              "Resource": {
+                "Fn::Sub": [
+                  "arn:aws:dynamodb:${region}:${account}:table/drone*",
+                  {
+                    "region": {
+                      "Ref": "AWS::Region"
+                    },
+                    "account": {
+                      "Ref": "AWS::AccountId"
+                    }
+                  }
+                ]
+              }
             }
           ]
         }
